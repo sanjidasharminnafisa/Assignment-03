@@ -20,9 +20,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="bg-neutral-100">
         <!-- header navbar and button -->
-        <section class="navbar bg-base-100">
+        <section class="navbar pt-10 px-32">
             <div class="navbar-start">
             <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -38,71 +38,78 @@
                     d="M4 6h16M4 12h8m-8 6h16" />
                 </svg>
                 </div>
-                <!-- <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                <li><a>Item 1</a></li>
-                <li>
-                    <a>Parent</a>
-                    <ul class="p-2">
-                    <li><a>Submenu 1</a></li>
-                    <li><a>Submenu 2</a></li>
-                    </ul>
-                </li>
-                <li><a>Item 3</a></li>
-                </ul> -->
             </div>
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            <a class="btn btn-ghost text-xl">Rinterio</a>
+            <i class="fa-solid fa-arrow-up-right-from-square bg-lime-400 rounded-full px-1.5 py-1.5"></i>
+            <a class="btn btn-ghost text-2xl font-bold">Rinterio</a>
             </div>
             <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
-                <li><a>Home</a></li>
-                <li><a>Services</a></li>
-                <li><a>Portfolio</a></li>
-                <li><a>Blogs</a></li>
+                <li class="pr-7"><a class="font-bold">Home</a></li>
+                <li class="pr-7"><a>Services</a></li>
+                <li class="pr-7"><a>Portfolio</a></li>
+                <li class="pr-7"><a>Blogs</a></li>
                 <li><a>Contact Us</a></li>
             </ul>
             </div>
             <div class="navbar-end">
-            <a class="btn btn-success rounded-full">Book Consult<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <div class="pr-3">
+                <i class="fa-solid fa-magnifying-glass text-gray-400 bg-white rounded-full px-1.5 py-1.5"></i>
+                </div>
+                <div class="pr-3">
+                <i class="fa-solid fa-cart-shopping text-gray-400 bg-white rounded-full px-1.5 py-1.5"></i>
+                </div>
+            <a class="btn btn-success rounded-full font-bold bg-lime-400 border-0">Book Consult<i class="fa-solid fa-arrow-up-right-from-square text-white bg-black rounded-full px-1.5 py-1.5"></i></a>
             </div>
         </section>
 
 <!-- header banner and title -->
-        <section class="grid place-items-center">
+        <section class="grid place-items-center pb-20">
             <img class="w-96 h-64" src="assets/banner.png" alt="">
             <div class="text-center">
                 <h1 class="text-5xl font-extrabold">A barn house of this design has a <br> striking appearance</h1>
                 <br>
                 <p class="text-gray-600">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.</p>
                 <br>
-                <a class="btn btn-success rounded-full">Book Consult<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a class="btn btn-success rounded-full bg-lime-200 border-0">View Details<i class="fa-solid fa-arrow-up-right-from-square bg-lime-400 rounded-full px-1.5 py-1.5"></i></a>
             </div>
         </section>
     </header>
     <main>
-<!-- main first section -->
-        <section class="bg-slate-100">
+<!-- main section -->
+        <section class="bg-base-200">
+            <img class="pt-10 pl-20" src="assets/Vector.png" alt="">
             <div>
-                <a class="btn rounded-full bg-white"><i class="fa-solid fa-arrow-right"></i>Book Consult</a>
-                <div class="hero bg-base-200 min-h-screen">
+                
+                <div class="hero min-h-screen">
                     <div class="hero-content flex-col lg:flex-row-reverse">
-                    <img class="w-80 h-80" src="assets/Rectangle.png">
+                    <img src="assets/Rectangle.png">
                     <div>
+                        <div class="pb-1.5"><a class="btn rounded-full bg-white"><i class="fa-solid fa-arrow-right"></i>About Us</a></div>
+                        
                         <h1 class="text-4xl font-bold">We design thoughtful, <br> liveable spaces</h1>
                         <p class="py-6">The barn house captivates with its blend of rustic charm and <br>
                             modern sophistication, featuring weathered wood, sleek metal accents.</p>
-<!-- card -->
-                    <div class="card card-side bg-base-100 shadow-xl">
+<!-- cards -->
+                    <div class="card card-side bg-base-100">
                         <figure>
-                        <img class="" src="assets/commercial.png" alt="" />
+                        <img class="pl-5" src="assets/commercial.png" alt="" />
                         </figure>
                         <div class="card-body">
-                        <h2 class="card-title">New movie is released!</h2>
-                        <p>Click the button to watch on Jetflix app.</p>
+                        <h2 class="card-title">Commercial</h2>
+                        <p>The barn house captivates with its blend <br> of rustic charm and modern.</p>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Watch</button>
+                        </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card card-side bg-base-100">
+                        <figure>
+                        <img class="pl-5" src="assets/residential.png" alt="" />
+                        </figure>
+                        <div class="card-body">
+                        <h2 class="card-title">Residential</h2>
+                        <p>The barn house captivates with its blend <br> of rustic charm and modern.</p>
+                        <div class="card-actions justify-end">
                         </div>
                         </div>
                     </div>
@@ -110,17 +117,64 @@
                     </div>
                 </div>
             </div>
+            <div class="grid place-items-center">
+                <div class="pb-1.5"><a class="btn rounded-full bg-white"><i class="fa-solid fa-arrow-right"></i>How we works</a></div>
+                <br>
+                <div class="text-center">
+                    <h2 class="text-4xl font-extrabold">Our Works Process</h2>
+                    <br>
+                    <p class="text-gray-600">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
+                </div>
+            </div>
         </section>
-<!-- main second section -->
 
 <!-- challenge section -->
 
     </main>
     <footer>
 <!-- footer first section -->
-
+        <section class="py-20">
+            <div class="grid place-items-center">
+                <div class="pb-1.5"><a class="btn btn-accent rounded-full bg-lime-100 border-0"><i class="fa-solid fa-arrow-right"></i>Let’s Connect</a></div>
+                <br>
+                <div class="text-center">
+                    <h2 class="text-4xl font-extrabold">Let’s Discuss Next Project</h2>
+                    <br>
+                    <p class="text-gray-600">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
+                    <br>
+                </div>
+                <div>
+                    <div class="flex">
+                        <input type="text" placeholder="First Name*" class="input w-full max-w-xs" />
+                        <input type="text" placeholder="Last Name*" class="input w-full max-w-xs" />
+                    </div>
+                    <div class="flex">
+                        <input type="text" placeholder="Phone Number*" class="input w-full max-w-xs" />
+                        <input type="text" placeholder="Email Number*" class="input w-full max-w-xs" />
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Write your message here" class="input w-full max-w-xs" />
+                    </div>
+                </div>
+                <a class="btn btn-accent rounded-full px-96 bg-lime-300 border-0">Send Mail<i class="fa-solid fa-arrow-up-right-from-square text-white bg-black rounded-full px-1.5 py-1.5"></i></a>
+            </div>
+        </section>
 <!-- footer second section -->
-
+        <section class="bg-black grid place-items-center text-white py-20">
+                <a class="btn btn-ghost text-2xl font-bold"><i class="fa-solid fa-arrow-up-right-from-square"></i>Rinterio</a>
+                <p class="text-gray-400 text-center pt-3">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
+            </div>
+            <div class="navbar-center hidden lg:flex py-8">
+                <ul class="menu menu-horizontal px-1">
+                    <li class="pr-7"><a class="font-bold">Home</a></li>
+                    <li class="pr-7"><a>Services</a></li>
+                    <li class="pr-7"><a>Portfolio</a></li>
+                    <li class="pr-7"><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                </ul>
+                </div>
+            <a class="btn bg-lime-300 border-0 rounded-full font-bold">Book Consult<i class="fa-solid fa-arrow-up-right-from-square text-white bg-black rounded-full px-1.5 py-1.5"></i></a>
+        </section>
     </footer>
 </body>
 </html>
